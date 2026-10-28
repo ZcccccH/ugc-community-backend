@@ -1,0 +1,34 @@
+# Example profile. Copy to application-local.yml (git-ignored) and run with
+#   SPRING_PROFILES_ACTIVE=local mvn spring-boot:run
+# Prefer environment variables for secrets; never commit real values.
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/ugc_community?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: ugc_app
+    password: change-me
+
+app:
+  jwt:
+    # At least 32 random characters, e.g. `openssl rand -base64 48`
+    secret: replace-with-a-long-random-secret-of-32-plus-chars
+  auth:
+    contact-reset-enabled: false
+  security:
+    trust-proxy: false
+    cors:
+      allowed-origins: http://localhost:3000
+    signature:
+      enabled: false
+      public-key: ""
+  upload:
+    dir: ./uploads
+    qiniu:
+      enabled: false
+      access-key: ""
+      secret-key: ""
+      bucket: ""
+      domain: ""
+  ai:
+    deepseek:
+      api-key: ""

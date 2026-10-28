@@ -1,0 +1,49 @@
+# Build output
+target/
+build/
+*.jar
+*.war
+HELP.md
+
+# Local configuration and secrets (never commit)
+.env
+.env.*
+!.env.example
+application-local.yml
+application-prod.yml
+src/main/resources/application-*.yml
+!src/main/resources/application-example.yml
+*.pem
+*.key
+*.jks
+*.p12
+*.keystore
+
+# Runtime data
+uploads/
+logs/
+*.log
+hs_err_pid*.log
+
+# Database dumps (may contain user data)
+*.dump
+sql/*dump*.sql
+
+# IDE / OS
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.classpath
+.project
+.settings/
+.factorypath
+.sts4-cache/
+.DS_Store
+
+# AI tooling
+.agents/
+.claude/
+.codex*/
+AGENTS.md

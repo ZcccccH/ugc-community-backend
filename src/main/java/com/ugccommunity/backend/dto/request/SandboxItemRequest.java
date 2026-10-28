@@ -1,0 +1,16 @@
+package com.ugccommunity.backend.dto.request;
+
+public class SandboxItemRequest {
+    private String worldviewIds; private String organizationIds;
+    private Long folderId;
+    private Long worldviewId; private Long organizationId; private Long counterpartCharacterId; private String relationCharacterIds; private String relationOrganizationIds; private String relationLabel; private String relationColor; private Boolean relationArrow; private String relationArrowStyle; private String cardUrl; private String name; private String description; private String avatar; private String personality; private String background; private String content; private Integer level; private Integer sortOrder; private Double canvasX; private Double canvasY;
+    public Long getFolderId(){return folderId;} public void setFolderId(Long v){folderId=v;}
+    public Long getWorldviewId(){return worldviewId;} public void setWorldviewId(Long v){worldviewId=v;} public Long getOrganizationId(){return organizationId;} public void setOrganizationId(Long v){organizationId=v;}
+    public String getWorldviewIds(){return worldviewIds;} public void setWorldviewIds(String v){worldviewIds=v;} public String getOrganizationIds(){return organizationIds;} public void setOrganizationIds(String v){organizationIds=v;}
+    public String getName(){return name;} public void setName(String v){name=v;} public String getDescription(){return description;} public void setDescription(String v){description=v;} public String getAvatar(){return avatar;} public void setAvatar(String v){avatar=v;}
+    public String getPersonality(){return personality;} public void setPersonality(String v){personality=v;} public String getBackground(){return background;} public void setBackground(String v){background=v;} public String getContent(){return content;} public void setContent(String v){content=v;}
+    public Long getCounterpartCharacterId(){return counterpartCharacterId;} public void setCounterpartCharacterId(Long v){counterpartCharacterId=v;} public String getRelationCharacterIds(){return relationCharacterIds;} public void setRelationCharacterIds(String v){relationCharacterIds=v;} public String getRelationOrganizationIds(){return relationOrganizationIds;} public void setRelationOrganizationIds(String v){relationOrganizationIds=v;} public String getCardUrl(){return cardUrl;} public void setCardUrl(String v){cardUrl=v;}
+    public String getRelationLabel(){return relationLabel;} public void setRelationLabel(String v){relationLabel=v;}
+    public String getRelationColor(){return relationColor;} public void setRelationColor(String v){relationColor=v;} public Boolean getRelationArrow(){return relationArrow;} public void setRelationArrow(Boolean v){relationArrow=v;} public String getRelationArrowStyle(){return relationArrowStyle;} public void setRelationArrowStyle(String v){relationArrowStyle=v;}
+    public Integer getLevel(){return level;} public void setLevel(Integer v){level=v;} public Integer getSortOrder(){return sortOrder;} public void setSortOrder(Integer v){sortOrder=v;} public Double getCanvasX(){return canvasX;} public void setCanvasX(Double v){canvasX=v;} public Double getCanvasY(){return canvasY;} public void setCanvasY(Double v){canvasY=v;}
+}
